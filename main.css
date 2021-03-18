@@ -1,0 +1,120 @@
+:root {
+  --ginger-color: #FF9900;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.header {
+  background: #2E2E2E;
+  padding: 40px 0;
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-cv-link {
+  color: var(--ginger-color);
+  font-size: 21px;
+}
+
+.username {
+  font-size: 36px;
+  color: #fff;
+}
+
+.contacts  {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-style: normal;
+}
+
+.contacts__phone {
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contacts__mail {
+  color: var(--ginger-color);
+}
+
+.about {
+  display: flex;
+}
+
+.about__left {
+  width: 500px;
+  margin-right: 45px;
+}
+
+.avatar {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 37px;
+}
+
+.skills__title {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.skills__tech-item {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
