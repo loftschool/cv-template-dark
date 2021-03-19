@@ -9,16 +9,20 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="./main.css">
-
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./tablet.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="container header__container">
-        <a href="#" class="download-cv-link">
-          Скачать в pdf
+        <a href="#" class="download-cv-link" download="./img/avatar.jpeg">
+          <i class="fas fa-file-pdf"></i>
+          <span class="download-cv-link__text">
+            Скачать в pdf
+          </span>
         </a>
         <h1 class="username">
           Иван Абрамов
@@ -64,8 +68,94 @@
             </ul>
           </div>
         </section>
+        <section class="desc">
+          <ul class="desc__list">
+            <li class="desc__item">
+              <article class="desc__wrapper">
+                <h2 class="title">О себе</h2>
+                <div class="desc__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, ipsam ducimus magni unde ullam minus labore impedit laboriosam, quod deleniti harum perferendis aperiam ab nulla dolorum quibusdam sit nam.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="desc__item">
+              <article class="desc__wrapper">
+                <h2 class="title">О себе</h2>
+                <div class="desc__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, ipsam ducimus magni unde ullam minus labore impedit laboriosam, quod deleniti harum perferendis aperiam ab nulla dolorum quibusdam sit nam.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="desc__item">
+              <article class="desc__wrapper">
+                <h2 class="title">О себе</h2>
+                <div class="desc__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, ipsam ducimus magni unde ullam minus labore impedit laboriosam, quod deleniti harum perferendis aperiam ab nulla dolorum quibusdam sit nam.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="desc__item">
+              <article class="desc__wrapper">
+                <h2 class="title">О себе</h2>
+                <div class="desc__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum, ipsam ducimus magni unde ullam minus labore impedit laboriosam, quod deleniti harum perferendis aperiam ab nulla dolorum quibusdam sit nam.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
       </div> 
     </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="#" class="download-cv-link">
+          <i class="fas fa-file-pdf"></i>
+          <span class="download-cv-link__text">
+            Скачать в pdf
+          </span>
+        </a>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__icon">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__icon">
+              <i class="fab fa-vk"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__icon">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

@@ -1,5 +1,6 @@
 :root {
   --ginger-color: #FF9900;
+  --black-color: #2E2E2E;
 }
 
 html, body {
@@ -37,16 +38,18 @@ ul {
 
 .wrapper {
   min-height: 100%;
+  overflow: hidden;
 }
 
 .header {
-  background: #2E2E2E;
-  padding: 40px 0;
+  background: var(--black-color);
+  padding: 37px 0;
   margin-bottom: 60px;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -59,6 +62,18 @@ ul {
 .download-cv-link {
   color: var(--ginger-color);
   font-size: 21px;
+}
+
+.download-cv-link:hover {
+  text-decoration: none;
+}
+
+.download-cv-link:hover .download-cv-link__text {
+  text-decoration: underline;
+}
+
+.download-cv-link__text {
+  margin-left: 9px;
 }
 
 .username {
@@ -85,6 +100,7 @@ ul {
 
 .about {
   display: flex;
+  margin-bottom: 55px;
 }
 
 .about__left {
@@ -118,3 +134,69 @@ ul {
   font-size: 16px;
   margin-bottom: 4px;
 }
+
+.skills__tech-item {
+  padding-left: 20px;
+  position: relative;
+}
+
+.skills__tech-item:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ginger-color);
+}
+
+.desc__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.desc__item {
+  width: calc(100% / 2 - (34px / 2));
+  margin-bottom: 47px;
+}
+
+.footer {
+  background: var(--black-color);
+  padding: 46px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 10px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black-color);
+  background: white;
+}
+
+.socials__icon:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+
